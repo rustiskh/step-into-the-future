@@ -1,0 +1,53 @@
+.goals {
+	margin-top: 60px;
+
+	@include mobile {
+		margin-top: 40px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+
+		@include mobile {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		gap: 40px;
+		flex-wrap: wrap;
+	}
+
+	&-card {
+		flex: 1 1 360px;
+
+		&__header {
+			padding: 6px 20px;
+			background: var(--color-primary);
+			margin-bottom: 19px;
+		}
+
+		&__title {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 100%;
+			color: #fff;
+
+			@include mobile {
+				font-size: 16px;
+			}
+		}
+
+		&__text {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 100%;
+			color: var(--color-black-02);
+
+			@include mobile {
+				font-size: 14px;
+			}
+		}
+	}
+}

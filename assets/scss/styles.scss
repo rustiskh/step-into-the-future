@@ -1,0 +1,65 @@
+@import "mixins/media-mixins";
+@import "components/typography";
+@import "components/button";
+
+@import "components/header";
+@import "components/footer";
+@import "landing/sections/hero";
+@import "landing/sections/goals";
+@import "landing/sections/features";
+@import "landing/sections/cta";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+:root {
+	--color-primary: #91c0ac;
+	--color-white: #fff;
+
+	--color-black-02: #020e33;
+	--color-black-37: #373737;
+
+	// ---
+
+	--color-green-deepest: #57a41b;
+	--color-green-deep: #74c733;
+	--color-green-soft: #98dd62;
+	--color-green-softest: #d6f2c0;
+
+	--color-blue-deepest: #1b62a4;
+	--color-blue-deep: #337fc7;
+	--color-blue-soft: #62a2dd;
+	--color-blue-softest: #bed9f1;
+
+	--color-red-deepest: #c93329;
+	--color-red-deep: #f95c3a;
+	--color-red-soft: #ff9559;
+	--color-red-softest: #f2d2c0;
+
+	--color-yellow-deepest: #a89b23;
+	--color-yellow-deep: #f9cf3a;
+	--color-yellow-soft: #f2f453;
+	--color-yellow-softest: #feffc8;
+
+	--color-gray-59: #595866;
+	--color-gray-88: #88879b;
+	--color-gray-c6: #c6c5d2;
+	--color-gray-e1: #e1e1e7;
+	--color-gray-f5: #f5f4f8;
+}

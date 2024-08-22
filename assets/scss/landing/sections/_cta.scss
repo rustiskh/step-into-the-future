@@ -1,0 +1,28 @@
+.cta {
+	background: var(--color-primary);
+	padding-top: 60px;
+	padding-bottom: 50px;
+
+	@include mobile {
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+
+	&__text {
+		max-width: 810px;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 100%;
+		color: var(--color-white);
+		margin-bottom: 50px;
+
+		@include mobile {
+			font-style: 18px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__btn {
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,66 @@
+.hero {
+	background: var(--color-primary);
+	padding-top: 136px;
+	padding-bottom: 158px;
+	position: relative;
+
+	@include mobile {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	&__wrapper {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__title {
+		margin-bottom: 70px;
+
+		@include mobile {
+			margin-bottom: 36px;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+
+		@include mobile {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		&-text {
+			font-weight: 500;
+			font-size: 19px;
+			line-height: 100%;
+			color: var(--color-white);
+
+			@include mobile {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		z-index: 0;
+		max-width: 793px;
+		width: 100%;
+
+		@include mobile {
+			max-width: 360px;
+		}
+
+		&-img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+		}
+	}
+}
