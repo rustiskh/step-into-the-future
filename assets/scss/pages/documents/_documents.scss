@@ -1,0 +1,41 @@
+.documents {
+	margin-top: 60px;
+	min-height: 50vh;
+
+	@include mobile {
+		margin-top: 40px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+
+		@include mobile {
+			margin-bottom: 32px;
+		}
+	}
+
+	&-card {
+		flex: 1 1 360px;
+
+		&__header {
+			padding: 6px 20px;
+			background: var(--color-primary);
+			margin-bottom: 19px;
+
+			&:hover {
+				background: var(--color-primary-dark);
+			}
+		}
+
+		&__title {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 100%;
+			color: #fff;
+
+			@include mobile {
+				font-size: 16px;
+			}
+		}
+	}
+}

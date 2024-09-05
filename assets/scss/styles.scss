@@ -1,6 +1,7 @@
 @import "mixins/media-mixins";
 @import "components/typography";
 @import "components/button";
+@import "components/breadcrump";
 
 @import "components/header";
 @import "components/footer";
@@ -8,6 +9,11 @@
 @import "landing/sections/goals";
 @import "landing/sections/features";
 @import "landing/sections/cta";
+
+//docs
+@import "pages/documents/documents";
+@import "pages/documents/doc-hero";
+@import "pages/documents/doc";
 
 * {
 	margin: 0;
@@ -38,6 +44,7 @@ a {
 
 :root {
 	--color-primary: #91c0ac;
+	--color-primary-dark: #5b9f81;
 	--color-white: #fff;
 
 	--color-black-02: #020e33;

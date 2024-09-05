@@ -1,0 +1,41 @@
+.doc-hero {
+	background: var(--color-primary);
+	padding-top: 80px;
+	padding-bottom: 80px;
+	position: relative;
+
+	@include mobile {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	&__title {
+		margin-bottom: 50px;
+
+		@include mobile {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+
+		@include mobile {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		&-text {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 100%;
+			color: var(--color-white);
+
+			@include mobile {
+				font-size: 14px;
+			}
+		}
+	}
+}
